@@ -78,7 +78,7 @@ textarea.inp{resize:vertical;font:13px/1.4 ui-monospace,Menlo,Consolas,monospace
 // when the HTML file is replaced with an updated version. New versions should only ADD fields to the saved data.
 var KEY_DATA='dissectdrill:data',KEY_PAL='dissectdrill:palette',KEY_SESSION='dissectdrill:session',SCHEMA=1;
 var SUBJECTS=[{k:'dev',n:'DevPsy Drills',live:true},{k:'pa',n:'PsyAss Drills'},{k:'ab',n:'AbPsy Drills'},{k:'io',n:'I/O Drills'}];
-var NOTE='These drills follow the RGO TOS Dissection lectures. New drills are added every Wednesday, after the Sunday lecture.';
+var NOTE='These drills follow the RGO TOS Dissection lectures. New drills will be added throughout the week after the Sunday lecture.';
 var app=document.getElementById('app'),H=document.getElementById('h'),SUB=document.getElementById('sub'),enc=new TextEncoder();
 function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return ('0'+x.toString(16)).slice(-2)}).join('')}
 function sha(s){return crypto.subtle.digest('SHA-256',enc.encode(s)).then(hex)}
